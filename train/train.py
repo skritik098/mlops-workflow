@@ -22,7 +22,7 @@ from keras.utils.np_utils import to_categorical
 
 
 inp_layer = Input(shape=784)
-x =  Dense(128,activation=relu)(inp_layer)
+x =  Dense(64,activation=relu)(inp_layer)
 out = Dense(10,activation='softmax')(x)
 model = Model(inputs=[inp_layer],outputs=[out])
 
